@@ -2,6 +2,8 @@
   <!DOCTYPE html>
   <html>
     <head>
+      <meta charset="UTF-8">
+      <title> Categories </title>
       <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
@@ -10,7 +12,6 @@
       <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
       <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
 
     <body>
@@ -20,7 +21,7 @@
         <div class="col s12" id="title"><h2>Watch Now</h2></div>
       </div>
       <div class="row">
-        <div class="col s3 cat"><div class="tile"><i class="large material-icons activator">ondemand_video</i><h5>Movies & TV</h5></div></div>
+        <div class="col s3 cat"><div class="tile" onclick="switchCat(this,'movies.html')"><i class="large material-icons activator">ondemand_video</i><h5>Movies & TV</h5></div></div>
         <div class="col s3 cat"><div class="tile"><i class="large material-icons">language</i><h5>News</h5></div></div>
         <div class="col s3 cat"><div class="tile"><i class="large material-icons activator">video_library</i><h5>Videos</h5></div></div>
         <div class="col s3 cat"><div class="tile"><i class="large material-icons activator">rowing</i><h5>Sports</h5></div></div>
@@ -41,6 +42,12 @@
 
       </div>
       <!--JavaScript at end of body for optimized loading-->
-      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script>
+        function switchCat(elmnt,page) {
+          window.location = page;
+        }
+
+      </script>
+      <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
     </body>
   </html>
