@@ -1,0 +1,22 @@
+body, html {
+    background: #f9f9fa;
+    color: #0c0c0d;
+    font-family: amazon-ember-display-regular, sans-serif;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+body {
+    margin-left: 44px;
+    margin-right: 44px;
+}
+
+a {
+    color: #0060df;
+}
+
+a[name],
+h2 a,
+h3 a {
+    color: #0c0c0d;
+}

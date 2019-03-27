@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <org.mozilla.focus.widget.TelemetrySwitchPreference
+        android:key="@string/pref_key_telemetry"
+        android:title="@string/preference_mozilla_telemetry2"
+        android:persistent="true"
+        android:defaultValue="@bool/pref_telemetry_default_value"
+        android:layout="@layout/preference_layout"/>
+
+    <Preference
+        android:key="@string/pref_key_about"
+        android:title="@string/menu_about"
+        android:layout="@layout/preference_layout"/>
+
+    <Preference
+        android:key="@string/pref_key_privacy_notice"
+        android:title="@string/preference_privacy_notice"
+        android:layout="@layout/preference_layout" />
+
+    <PreferenceScreen
+        android:title="@string/settings_cookies_dialog_title"
+        android:layout="@layout/preference_layout"
+        android:fragment="org.mozilla.focus.settings.ClearDataFragment"/>
+
+</PreferenceScreen>

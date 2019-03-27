@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<resources>
+    <color name="colorPrimary">#ff272727</color>
+    <color name="colorPrimaryDark">#6c3b6e</color>
+    <color name="colorAccent">@color/photonBlue70</color>
+
+    <color name="colorAccentSettings">@color/photonBlue50</color>
+
+    <color name="scrollbarThumb">#b2b2b2b2</color>
+
+    <color name="photonGrey10_a80p">#CCF9F9FA</color>
+    <color name="photonGrey90_a60p">#990c0c0d</color>
+
+    <!-- via https://github.com/mozilla-mobile/firefox-tv/issues/759#issuecomment-381702769 -->
+
+    <color name="amazon_settings_background">#151920</color>
+    <color name="amazon_settings_textcolor">@color/photonGrey10</color>
+    <color name="amazon_toggle_on">#00CAFF</color>
+    <color name="amazon_toggle_off">#F0F1EF</color>
+</resources>

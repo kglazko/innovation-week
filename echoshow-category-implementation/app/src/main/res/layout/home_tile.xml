@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<!-- To center the RecyclerView items within their columns of the parent container, we set
+     this width to match_parent, making the items take up the remaining available space.
+     Side effects:
+     - All children must have their width set explicitly so they don't expand beyond their
+     intended length.
+     - The parent's padding must compensate for the larger list item widths. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/home_tile"
+              android:orientation="vertical"
+              android:focusable="true"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:clickable="true"
+              android:layout_marginBottom="@dimen/home_tile_margin_bottom">
+
+    <!-- We hardcode the sizes of the CardView and ImageView to match so we don't get extra padding
+         between the CardView and the ImageView. -->
+    <android.support.v7.widget.CardView
+        android:layout_width="@dimen/home_tile_width"
+        android:layout_height="@dimen/home_tile_height"
+        app:cardCornerRadius="6dp"
+        app:cardPreventCornerOverlap="false">
+
+        <ImageView
+            android:id="@+id/tile_icon"
+            android:layout_width="@dimen/home_tile_width"
+            android:layout_height="@dimen/home_tile_height"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"
+            tools:ignore="ContentDescription"/>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/tile_title"
+        android:layout_width="@dimen/home_tile_width"
+        android:layout_height="36dp"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:fontFamily="@string/font_ember_regular"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/photonGrey10"
+        android:textSize="24sp"
+        tools:text="YouTube" />
+</LinearLayout>

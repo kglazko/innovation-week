@@ -1,0 +1,56 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+package org.mozilla.focus.telemetry
+
+import android.content.Context
+import io.sentry.Sentry
+import io.sentry.android.AndroidSentryClientFactory
+import org.mozilla.focus.BuildConfig
+
+/**
+ * Exception for non-crashing error states that we want Sentry to collect (even if we don't want to
+ * crash on them).
+ */
+class NonFatalAssertionException(message: String) : Exception(message)
+
+/**
+ * An interface to the Sentry crash reporting SDK. All code that touches the Sentry APIs
+ * directly should go in here (like TelemetryWrapper). We also collect non-fatal error states.
+ *
+ * With the current implementation, to enable Sentry on Release builds, add a
+ * <project-dir>/.sentry_dsn_release file with your key. To enable Sentry on Debug
+ * builds, add a .sentry_dsn_debug key and replace the [DataUploadPreference.isEnabled]
+ * value with true. These keys are available in the
+ * APT Google Drive -> Firefox-Connect -> Engineering -> Secrets dir.
+ *
+ * The gradle output is the only way to verify if adding the key was successful (but it
+ * won't indicate if the key is valid: #747). You will see a message in the gradle output
+ * indicating the key was added:
+ * "Sentry DSN (amazonWebviewRelease): Added from /Users/mcomella/dev/moz/firefox-connect/.sentry_dsn_release"
+ * As opposed to:
+ * "Sentry DSN (amazonWebviewRelease): X_X"
+ */
+object SentryWrapper {
+
+    fun init(context: Context) {
+        onIsEnabledChanged(context, DataUploadPreference.isEnabled(context))
+    }
+
+    internal fun onIsEnabledChanged(context: Context, isEnabled: Boolean) {
+        // The BuildConfig value is populated from a file at compile time.
+        // If the file did not exist, the value will be null.
+        //
+        // If you provide a null DSN to Sentry, it will disable upload and buffering to disk:
+        // https://github.com/getsentry/sentry-java/issues/574#issuecomment-378298484
+        //
+        // In the current implementation, each time `init` is called, it will overwrite the
+        // stored client and DSN, thus calling it with a null DSN will have the affect of
+        // disabling the client: https://github.com/getsentry/sentry-java/issues/574#issuecomment-378406105
+        val sentryDsn = if (isEnabled) BuildConfig.SENTRY_DSN else null
+        Sentry.init(sentryDsn, AndroidSentryClientFactory(context.applicationContext))
+    }
+
+    fun capture(throwable: Throwable) = Sentry.capture(throwable)
+}

@@ -1,0 +1,28 @@
+[
+    {
+        "id": "googleVideo",
+        /* URL does not make sense for tiles where action == SEARCH, but the field is required
+        as a unique identifier. This will be changed by the refactor described in
+        https://github.com/mozilla-mobile-skunkworks/firefox-connect/pull/258 */
+        "url": "https://www.not-a-url.this-is-used-only-as-a-unique-identifier.google-search.mozilla.com",
+        "title": "Search with Google",
+
+        /* We are not using the resources system so we can only store an image for one configuration.
+           All devices are currently mdpi but we chose hdpi to be future proof. */
+        "img": "tile_google.png",
+        "action": "SEARCH"
+    },
+    {
+        "id": "youtube",
+        /* Use this URL to ensure users see the best formatted website. */
+        "url": "https://ftv.cdn.mozilla.net/ytfc",
+        "title": "YouTube",
+        "img": "tile_youtube.png"
+    },
+    {
+        "id": "wikipedia",
+        "url": "https://www.wikipedia.org/",
+        "title": "Wikipedia",
+        "img": "tile_wikipedia.png"
+    }
+]

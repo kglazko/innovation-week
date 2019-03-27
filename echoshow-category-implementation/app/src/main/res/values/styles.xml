@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- The EngineView, or its fullscreen container, cover the whole screen so we disable this to reduce overdraw. -->
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowContentTransitions">true</item>
+
+        <item name="popupMenuStyle">@style/PopupMenu</item>
+
+        <item name="android:statusBarColor">@android:color/transparent</item>
+
+        <item name="android:fontFamily">@string/font_ember_regular</item>
+    </style>
+
+    <style name="DialogTitleStyle" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@string/font_roboto_medium</item>
+    </style>
+
+    <!-- Setting this via alertDialogStyle in AppTheme results in crashes. You need to
+         explicitly select this via "new AlertDialog.Builder(activity, R.style.DialogStyle)"
+         We need this style because the accent colour for the MainActivity is purple,
+         but we want different accents in the dialog. -->
+    <style name="DialogStyle" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="colorAccent">#FF00A4DC</item>
+        <item name="android:windowTitleStyle">@style/DialogTitleStyle</item>
+        <item name="dialogPreferredPadding">24dp</item>
+    </style>
+
+    <style name="SettingsTheme" parent="Theme.AppCompat">
+        <item name="colorAccent">@color/colorAccentSettings</item>
+        <item name="preferenceTheme">@style/SettingsPreferenceThemeOverlay</item>
+        <item name="actionBarStyle">@style/SettingsActionBarTheme</item>
+        <item name="android:fontFamily">@string/font_ember_light</item>
+        <item name="android:background">@color/amazon_settings_background</item>
+        <item name="android:textColor">@color/amazon_settings_textcolor</item>
+    </style>
+
+    <style name="SettingsPreferenceThemeOverlay" parent="PreferenceThemeOverlay">
+        <item name="switchPreferenceCompatStyle">@style/SettingsSwitchPreferenceCompatStyle</item>
+    </style>
+
+    <style name="SettingsSwitchPreferenceCompatStyle" parent="Preference.SwitchPreferenceCompat">
+        <item name="android:widgetLayout">@layout/preferences_widget_switch_compat</item>
+    </style>
+
+    <style name="SettingsActionBarTheme" parent="Widget.AppCompat.ActionBar">
+        <item name="titleTextStyle">@style/SettingsActionBarTextAppearance</item>
+        <item name="height">@dimen/appbar_height</item>
+        <item name="homeAsUpIndicator">@drawable/ic_settings_back</item>
+    </style>
+
+    <style name="SettingsActionBarTextAppearance" parent="TextAppearance.AppCompat.Headline">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">@string/font_ember_regular</item>
+        <item name="android:textColor">@color/amazon_settings_textcolor</item>
+    </style>
+
+    <style name="PopupMenu" parent="@style/Widget.AppCompat.Light.PopupMenu">
+        <item name="overlapAnchor">true</item>
+    </style>
+
+    <style name="PillButton" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:minWidth">204dp</item>
+        <item name="android:minHeight">56dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:fontFamily">@string/font_ember_regular</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="PlatformPrimaryButton" parent="PillButton">
+        <item name="android:textColor">@color/amazon_settings_background</item>
+        <item name="android:background">@drawable/button_primary_native</item>
+    </style>
+
+    <style name="PlatformSecondaryButton" parent="PillButton">
+        <item name="android:textColor">@color/button_secondary_native_text_selector</item>
+        <item name="android:background">@drawable/button_secondary_native</item>
+    </style>
+
+    <style name="PreferenceTitleTextAppearance" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textSize">48sp</item>
+        <item name="android:textColor">@color/photonGrey10_a80p</item>
+        <item name="android:fontFamily">@string/font_ember_light</item>
+    </style>
+
+    <style name="PreferenceBodyTextAppearance" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textSize">32sp</item>
+        <item name="android:textColor">@color/photonGrey10</item>
+        <item name="android:fontFamily">@string/font_ember_regular</item>
+    </style>
+
+</resources>

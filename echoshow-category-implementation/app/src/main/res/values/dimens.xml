@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <dimen name="appbar_height">104dp</dimen>
+    <dimen name="navigation_overlay_bottom_as_dialog">128dp</dimen>
+
+    <dimen name="navigation_overlay_corner_radius">40dp</dimen>
+
+    <dimen name="home_tile_margin_bottom">32dp</dimen>
+    <dimen name="home_tile_corner_radius">8dp</dimen>
+    <dimen name="home_tile_placeholder_corner_radius">12dp</dimen>
+    <dimen name="home_tile_placeholder_icon_size">50dp</dimen>
+    <dimen name="home_tile_width">282dp</dimen>
+    <dimen name="home_tile_height">188dp</dimen>
+
+    <dimen name="button_corner_radius">28dp</dimen>
+    <dimen name="home_tile_margin_value">8dp</dimen>
+
+</resources>

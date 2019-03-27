@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+  <string name="action_cancel">Encaboxar</string>
+  <string name="action_ok">Aceutar</string>
+    <string name="urlbar_hint">Gueta o introduz direiciones</string>
+    <string name="menu_settings">Axustes</string>
+  <string name="menu_about">Tocante a</string>
+    <string name="preference_mozilla_telemetry2">Unviar datos d\'usu</string>
+    <string name="preference_privacy_notice">Avisu de privacidá</string>
+    <string name="content_description_forward">Dir haza alantre</string>
+  <string name="content_description_reload">Recargar sitiu web</string>
+  <string name="content_description_back">Restolar p\'atrás</string>
+    <string name="external_app_prompt_title">Apertura d\'enllaz n\'otra aplicación</string>
+  <string name="external_app_prompt">Pues colar de %1$s p\'abrir esti enllaz en %2$s.</string>
+    <string name="external_multiple_apps_matched_exit">¿Colar de restolar en privao?</string>
+    <string name="errorpage_title">Problema cargando la páxina</string>
+  <string name="errorpage_refresh">Retentar</string>
+  <string name="error_connectionfailure_title">Nun pue coneutase</string>
+  <string name="error_connectionfailure_message"><![CDATA[<ul xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">"\n        "<li>Quiciabes el sitiu tea temporalmente non disponible o perocup&#225;u. Volvi tentalo nunos minutos.</li>"\n        "<li>Si nun yes a cargar p&#225;xina dala, comprueba la to conex&#243;n de datos o\'l Wi-Fi del pres&#233;u.</li>"\n      "</ul>]]></string>
+  <string name="error_timeout_title">Escosó\'l tiempu de la conexón</string>
+  <string name="error_hostLookup_title">Nun s\'alcontró\'l sirvidor</string>
+  <string name="error_hostLookup_message"><![CDATA[<ul xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">"\n        "<li>"Comprueba los fallos d\'escritura na direici&#243;n como\n          "<strong>ww</strong>".example.com en cuentes de\n          "<strong>www</strong>.example.com</li>"\n        "<li>Si nun yes a cargar p&#225;xina dala, comprueba la to conex&#243;n de datos o\'l Wi-Fi del pres&#233;u.</li>"\n      "</ul>]]></string>
+  <string name="error_malformedURI_title">La direición nun ye válida</string>
+  <string name="error_malformedURI_message"><![CDATA[<ul xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">"\n  "<li>"Davezu les direiciones web escr&#237;bense como "<strong>http://www.exemplu.com/</strong></li>"\n  "<li>"Aseg&#250;rate que tas usando les barres invert&#237;es "<strong>/</strong>.</li>\n</ul>]]></string>
+  <string name="error_redirectLoop_title">La páxina nun ta redirixendo afayadizamente</string>
+  <string name="error_redirectLoop_message"><![CDATA[<ul xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">"\n  "<li>Davezu esti problema pue c&#225;usalu\'l desactivar o refugar les cookies.</li>\n</ul>]]></string>
+  <string name="error_unsupportedprotocol_title">Nun s\'entendió la direición</string>
+  <string name="error_unsupportedprotocol_message"><![CDATA[<ul xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">"\n  "<li>Quiciabes precises instalar otru software p\'abrir esta direici&#243;n.</li>\n</ul>]]></string>
+  <string name="error_sslhandshake_title">Falló la conexón segura</string>
+  <string name="error_sslhandshake_message"><![CDATA[<ul xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">"\n  "<li>Esto quiciabes seya un problema cola configuraci&#243;n del sirvidor o que\ndaqui&#233;n lu tea tentando de suplantar.</li>"\n  "<li>Si nel pas&#225;u te coneutesti a esti sirvidor con &#233;situ, quiciabes el fallu seya\ntemporal y pueas tentalo de nueves m&#225;s sero.</li>\n</ul>]]></string>
+  <string name="error_generic_title">Ups</string>
+  <string name="error_generic_message">Nun podemos cargar esta páxina por dalgún motivu</string>
+  <string name="your_rights">Els vostres drets</string>
+    <string name="your_rights_content1">%1$s ye un programa de baldre y de códigu abiertu fechu por Mozilla y otros collaboradores.</string>
+  <string name="your_rights_content2"><![CDATA["%1$s ta disponible so los términos de la "<a xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" href="%2$s">Mozilla Public License</a>" y otres llicencies de códigu abiertu."]]></string>
+  <string name="your_rights_content3"><![CDATA["Nun tienes concedíu dengún drechu o llicencia total o parcial sobre les marques rexistraes de la Mozilla Foundation, esto inclúi los nomes y logos Mozilla, Firefox o %1$s. "<a xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" href="%2$s">Equ&#237;</a>" pue alcontrase información adicional."]]></string>
+  <string name="your_rights_content4"><![CDATA["El códigu fonte adicional de %1$s ta disponible so otres "<a xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" href="%2$s">llicencies</a>" de baldre y códigu abiertu."]]></string>
+  <string name="your_rights_content5"><![CDATA["%1$s tamién usa llistaos de bloquéu forníos por Disconnect, Inc. como trabayos separtaos ya independientes so la "<a xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" href="%2$s">GNU General Public License v3</a>" y disponible "<a xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" href="%3$s">equ&#237;</a>.]]></string>
+</resources>

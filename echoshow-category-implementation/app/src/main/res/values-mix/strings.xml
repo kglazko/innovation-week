@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+  <string name="action_cancel">Kunchatu</string>
+  <string name="action_ok">Va\'a</string>
+    <string name="urlbar_hint">Ntukú a chaa ña kunu kuncheu</string>
+    <string name="menu_settings">Nu samu</string>
+  <string name="menu_about">Tsaa ña</string>
+    <string name="preference_mozilla_telemetry2">Chachu\'un tu\'un nchachu\'un</string>
+    <string name="preference_privacy_notice">Nixi inka vaa tutu\'ku</string>
+    <string name="content_description_forward">Nduku chinuu</string>
+  <string name="content_description_reload">Ntu tsaa pagina web</string>
+  <string name="content_description_back">Nduku sata</string>
+    <string name="external_app_prompt_title">Kuna nu ndukuku inka tsio</string>
+  <string name="external_app_prompt">Kuu siau %1$s cha kuu kunu nu ndukuku yoo%2$s.</string>
+    <string name="external_multiple_apps_matched_exit">A keu nu nduku seu ñaa?</string>
+    <string name="errorpage_title">Makuu kuncheu pagina yoo</string>
+  <string name="errorpage_refresh">Kitsaa tuku</string>
+  <string name="error_connectionfailure_title">Kue kuu kitsai</string>
+  <string name="error_connectionfailure_message"><![CDATA[<ul xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">"\n        "<li>Makuu kuncheu &#241;a inka nu pagina yoo . Kunchatu loxo cha kitsa tuku.</li>"\n        "<li>tatu kueku kunu ni iin p&#225;gina, Kunche&#232; a kuu kuachu\'un datos &#241;a kaa ndusu a conexi&#243;n Wi-Fi.</li>"\n      "</ul>]]></string>
+  <string name="error_timeout_title">Ntsinu conexión</string>
+  <string name="error_hostLookup_title">Kòo servidor ni ntanèe</string>
+  <string name="error_hostLookup_message"><![CDATA[<ul xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">"\n        "<li>"Kunchee a va\'a nchau \n          "<strong>ww</strong>".example.com a\n          "<strong>www</strong>.example.com</li>"\n        "<li>Tatu kueku kuncheu ni iin pagina, kunchee a va\'a yee conexi&#243;n a Wi-Fi &#241;a kaa ndusuku.</li>"\n      "</ul>]]></string>
+  <string name="error_malformedURI_title">Va\'a ni chau pagina</string>
+  <string name="error_malformedURI_message"><![CDATA[<ul xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">"\n  "<li>"Ta kunu chau iin pagina web tsini&#241;u\'u chau&#241;a sa\'an "<strong>http://www.example.com/</strong></li>"\n  "<li>"Kunchee an\'chau uvi raya (tana &#241;o\'o "<strong>/</strong>).</li>\n</ul>]]></string>
+  <string name="error_redirectLoop_title">Página yoo kueku nuna vai</string>
+  <string name="error_redirectLoop_message"><![CDATA[<ul xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">"\n  "<li>&#209;a &#241;oo yaa ta stoo a kue kunu cookies.</li>\n</ul>]]></string>
+  <string name="error_unsupportedprotocol_title">Ma ni tsituninia direcciòn</string>
+  <string name="error_unsupportedprotocol_message"><![CDATA[<ul xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">\n<li>"Tsini\'&#241;uu chik&#224;u inka programa tatu kunu kun&#250; direcci&#243;n y&#242;o. "</li>" \n "</ul>]]></string>
+  <string name="error_sslhandshake_title">Mani\'ku chitai\'ña</string>
+  <string name="error_sslhandshake_message"><![CDATA[<ul xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">"\n  "<li>Yee &#241;a V&#225;&#8217;&#224; nu inka pagina a inkana kuni sakue\'ena .</li>"\n  "<li>"Tatu va\'a nikitsau ta sata , chaa ntu\'u &#241;a V&#225;&#8217;&#224; yo kunchatu xoo cha kitsa tuku. "</li>\n</ul>]]></string>
+  <string name="error_generic_title">Kukanu inu</string>
+  <string name="error_generic_message">Ma ku kuncheu pagina yoo</string>
+  <string name="your_rights">Yee yu\'u</string>
+    <string name="your_rights_content1">%1$s software kuachu\'un ntiina ni kuu vaa saa Mozilla tsi nivi sachu\'un chi\'an.</string>
+  <string name="your_rights_content2"><![CDATA["%1$s kuu kuachu\'uña tsi "<a xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" href="%2$s">Licencia p&#250;blica Mozilla</a>" tsi inka licencias ña código abierto."]]></string>
+  <string name="your_rights_content3"><![CDATA["Koo licencia kuachu\'na marca Fundación Mozilla ni Firefox a inkana, tsi logotipo a sivi Mozilla, Firefox a %1$s ku ndukuku tu\'un "<a xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" href="%2$s">yo\'o</a>.]]></string>
+  <string name="your_rights_content4"><![CDATA["Inka "<a xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" href="%2$s">licencia</a>ña código abierto tsi gratuitassani inka código fuente kuachu\'un tsi %1$s.]]></string>
+</resources>
