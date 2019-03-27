@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- We specifically want match_parent here. If we set -1, the build breaks since integers aren't allowed.
+         If we set -1dp, the UI breaks (i.e. we don't get match_parent). For some reason adding another
+         redirection via an existing attribute works... -->
+
+    <!-- The custom tabs spec defines a maximum close button size, we need to define this here to enforce that sizing. -->
+
+    <!-- We are using a NavigationView in our context menu and it adds padding that we do not want. -->
+    <dimen name="design_navigation_separator_vertical_padding" tools:override="true">0dp</dimen>
+    <dimen name="design_navigation_padding_bottom" tools:override="true">0dp</dimen>
+
+    <!-- Specified in AdaptiveIconDrawable docs. -->
+
+    <dimen name="home_tile_container_margin_bottom">4dp</dimen>
+    <dimen name="home_tile_margin_bottom">24dp</dimen>
+    <dimen name="home_tile_corner_radius">4dp</dimen>
+    <dimen name="home_tile_placeholder_corner_radius">12dp</dimen>
+    <dimen name="home_tile_placeholder_icon_size">50dp</dimen>
+    <dimen name="urlbar_corner_radius">4dp</dimen>
+
+    <dimen name="remote_cursor_size">58dp</dimen>
+
+    <dimen name="button_size">48dp</dimen>
+    <dimen name="bundled_home_tile_margin_value">8dp</dimen>
+    <dimen name="custom_home_tile_margin_value">5dp</dimen>
+
+    <!-- We want to keep button_size and urlbar height the same to keep them aligned -->
+    <dimen name="urlbar_height">@dimen/button_size</dimen>
+
+    <dimen name="pocket_feed_horizontal_margin">96dp</dimen>
+    <dimen name="pocket_video_item_horizontal_margin">12dp</dimen>
+
+    <dimen name="pocket_video_mega_tile_thumbnail_corner_radius">4dp</dimen>
+    <dimen name="pocket_video_mega_tile_error_margin">16dp</dimen>
+    <dimen name="pocket_video_mega_tile_button_width">80dp</dimen>
+    <dimen name="pocket_video_mega_tile_button_height">36dp</dimen>
+
+    <!-- This value was chosen experimentally: see usages for criteria. -->
+    <dimen name="browser_overlay_delta_scroll_padding">50dp</dimen>
+
+    <dimen name="onboarding_button_height">36dp</dimen>
+    <dimen name="onboarding_button_width">192dp</dimen>
+</resources>

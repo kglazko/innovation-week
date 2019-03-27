@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/browserFragmentRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/browserContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <org.mozilla.tv.firefox.widget.ResizableKeyboardCoordinatorLayout
+            app:viewToHideWhenActivated="@+id/erase"
+            android:layout_marginTop="0dp"
+            android:id="@+id/main_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:clipChildren="false">
+
+            <mozilla.components.concept.engine.EngineView
+                android:id="@+id/engineView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbarThumbVertical="@drawable/scrollbar_thumb">
+                    <requestFocus />
+            </mozilla.components.concept.engine.EngineView>
+
+        </org.mozilla.tv.firefox.widget.ResizableKeyboardCoordinatorLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/videoContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:visibility="gone" />
+
+    <org.mozilla.tv.firefox.webrender.cursor.CursorView
+        android:id="@+id/cursorView"
+        android:layout_width="@dimen/remote_cursor_size"
+        android:layout_height="@dimen/remote_cursor_size"
+        android:layout_gravity="top|start"
+        android:src="@drawable/cursor_full"
+        android:scaleType="centerInside"
+        />
+
+    <org.mozilla.tv.firefox.webrender.FirefoxProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:focusable="false"
+        android:descendantFocusability="blocksDescendants"
+        />
+</FrameLayout>
