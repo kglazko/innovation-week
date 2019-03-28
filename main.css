@@ -25,14 +25,29 @@ h2 {
 }
 
 .tile2 {
-	padding: 7%;
 	height: 20vw;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #4a4a4f;
+	border-radius: 100px;
+	display:table-cell;
+	vertical-align:middle;
+	text-align: center;
+	background-color: #4a4a4f;
+	width:20vw;
 }
 
 .tile2:hover {
-	background-color: #4a4a4f;
+	background-color: #45a1ff;
 }
 
 .back-arrow {
 	padding-top: 2vw;
+}
+
+img {
+	display: block;
+	width:80%;
+	margin-left: 2vw;
+
 }
