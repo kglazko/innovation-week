@@ -116,10 +116,10 @@ public class ViewUtils {
     private static void showToast(Context context, int resId, String toastLocation) {
         Toast toast = Toast.makeText(context, resId, Toast.LENGTH_SHORT);
 
-        if (toastLocation.equals("top")) {
+        if ("top".equals(toastLocation)) {
             toast.setGravity(Gravity.CENTER_HORIZONTAL | Gravity.TOP, 0, 200);
         }
-        if (toastLocation.equals("bottom")) {
+        if ("bottom".equals(toastLocation)) {
             toast.setGravity(Gravity.CENTER_HORIZONTAL | Gravity.BOTTOM, 0, 100);
         }
         toast.show();
